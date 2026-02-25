@@ -20,6 +20,26 @@ Stop pasting code snippets into laggy, DOM-bloated browser tabs. Crucible featur
 2. Crucible packages the AST/text, encrypts it in transit, and mounts it to an **Explicit Context Cache** on your provider. 
 3. You interact with an AI that has 100% perfect, hallucination-free recall of your entire architecture. Crucible fixes the double hallucination problem.
 
+## 📂 Hierarchical Context Cascading (Lexical Scoping for AI Memory)
+
+Modern AI coding assistants (Copilot, Cursor) rely on blind Retrieval-Augmented Generation (RAG). They dump your entire repository into a vector database, resulting in the AI hallucinating modern solutions for legacy constraints, or suggesting web-scale patterns in embedded firmwares. 
+
+**Crucible solves this by implementing Lexical Scoping for AI Context.**
+
+Before a prompt ever hits the LLM, Crucible dynamically compiles a cascading system prompt based on your exact location in the file tree. It forces the AI to inherit the specific mental state, architectural rules, and historical trauma of the directory it is looking at.
+
+### The Context Cascade Pipeline:
+1. **User Scope (Global):** Defines who you are and your baseline philosophy. *(e.g., "I write bare-metal C++. I despise the Python GIL and OOP bloat.")*
+2. **Project Scope (Repository):** Defines the macro-architecture. *(e.g., "This is a 250M/s HFT Bot. Zero dynamic allocations on the hot path.")*
+3. **Directory Scope (Local Module):** Defines the hyper-specific constraints of the active folder. *(e.g., `/network/lockstep/` -> "WARNING: This is a deterministic lockstep simulation. Do NOT suggest `-ffastmath` or non-deterministic floating-point math. We are stuck in a 1995 DLL architecture.")*
+4. **Chat Scope (Active Prompt):** Your immediate query. *(e.g., "I'm getting state desyncs between Intel and AMD CPUs, find the anomaly.")*
+
+### Why This Matters
+By concatenating `User -> Project -> Directory -> Chat`, Crucible physically prevents the AI from suggesting `-O3` optimizations in a module that requires strict IEEE 754 compliance. 
+
+You don't have to repeat your architectural constraints in every prompt. You define the rules of the directory once, and the AI obeys the physics of that specific folder forever. 
+
+
 ## ⚡ Multi-Cloud & Sovereign Compute
 Crucible is entirely agnostic. You bring the API keys; Crucible manages the state. 
 
