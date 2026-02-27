@@ -41,6 +41,14 @@ By concatenating `User -> Project -> Directory -> Chat`, Crucible physically pre
 
 You don't have to repeat your architectural constraints in every prompt. You define the rules of the directory once, and the AI obeys the physics of that specific folder forever. 
 
+## 🎛️ Non-Linear Context UI (The Attention MMU)
+Standard AI web interfaces force you into a rigid, chronological timeline. You are forced to burn tokens and dilute the AI's attention span by continuously resending resolved errors, dead ends, and irrelevant tangents. 
+
+Crucible's UI fundamentally decouples your **Visual State** (what you see) from the **Payload State** (what the AI receives), giving you absolute control over the LLM's memory registers.
+
+* **Payload Checkboxing:** Uncheck any message in the chat timeline to instantly strip it from the API payload. The text remains on your screen for your personal reference, but you stop paying for the tokens and instantly clean up the AI's context window. 
+* **Drag-and-Drop Attention Hacking:** LLMs suffer from recency bias. In Crucible, you can drag a heavily engineered, successful benchmark from three hours ago and drop it at the bottom of the chat stack right before you hit send. You forcefully hijack the AI's attention mechanism without rewriting a single word.
+* **The Hive (Context Object Pool):** Deleting a message moves it to a local "trash" pool rather than destroying it. This allows you to rapidly hot-swap the AI's entire brain state. Working on a C++ linker error? Enable the C++ thread. Need to pivot to market microstructure? Unhide the architecture block, hide the C++ block, and hit send. 
 
 ## ⚡ Multi-Cloud & Sovereign Compute
 Crucible is entirely agnostic. You bring the API keys; Crucible manages the state. 
