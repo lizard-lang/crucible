@@ -1,6 +1,6 @@
 # Crucible Architecture🦎
 
-This document serves as my architecture brainstorming establishing prior art.
+*This document serves as my architecture brainstorming establishing prior art.*
 
 # Crucible Architecture: The Attention MMU
 
@@ -71,6 +71,15 @@ SaaS coding assistants silently inject invisible system prompts, hidden telemetr
 If the UI has a drop-down to expose the AI's internal "Chain of Thought," it also has a drop-down to expose the exact raw payload leaving your machine. 
 
 Before any network request fires, you can open the Metadata Inspector and view the exact JSON payload, the complete Hierarchical Context Cascade, and every single tag being routed to the AI endpoint. You own the architecture. You own the payload. You own the data.
+
+## 6. Token Telemetry & Cost Determinism
+Cloud providers meter their APIs based on raw ingress payload size. Because standard web interfaces hide the exact payload they are sending, developers are subjected to invisible rate limits, hidden API costs, and unexpected throughput spillovers. 
+
+Crucible operates on absolute **Cost Determinism**. 
+
+Before you execute a prompt, Crucible calculates the exact token geometry of the payload. It factors in the Explicit Context Cache discount multipliers, the unchecked/hidden nodes in the UI, and the hierarchical system prompt. You know the exact token weight, API cost, and throughput burst rate *before* the packet leaves your NIC. 
+
+You are never flying blind into a rate limit again.
 
 ---
 
