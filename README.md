@@ -6,6 +6,8 @@ Crucible is not a SaaS product. It is a local, defensively-architected intellige
 
 Modern AI web interfaces treat your architecture, proprietary algorithms, and architectural brainstorming as telemetry. Crucible treats it as a liability that must be contained.
 
+I'm working on Crucible first to speed up the development of the Lizard Compiler. 
+
 ## 🔒 Security & The "Melt" Philosophy
 An LLM context window is the most high-fidelity psychological and intellectual fingerprint a developer can generate. Crucible is built on the philosophy that your chat history is a diary, and it deserves uncompromising security. 
 
