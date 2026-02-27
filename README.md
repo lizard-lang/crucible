@@ -55,3 +55,5 @@ git clone https://github.com/lizard-lang/crucible.git
 # Build the local encrypted binary
 cd crucible
 liz build . 
+
+Copyright (c) 2026 Adderalin & lizard-lang
