@@ -2,6 +2,8 @@
 
 *This document serves as my architecture brainstorming establishing prior art.*
 
+Copyright (c) 2026 Adderalin & lizard-lang under MIT LICENSE. SEE LICENSE file.
+
 # Crucible Architecture: The Attention MMU
 
 To understand Crucible, you have to understand the fundamental failure of modern AI interfaces. 
