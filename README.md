@@ -2,6 +2,8 @@
 
 **A sovereign, end-to-end encrypted AI engineering terminal and context ingestion engine.**
 
+*This document serves as my architecture brainstorming establishing prior art.*
+
 Crucible is not a SaaS product. It is a local, defensively-architected intelligence terminal designed for developers, quantitative researchers, and systems architects who require absolute cryptographic privacy over their execution environment and ideation process. 
 
 Modern AI web interfaces treat your architecture, proprietary algorithms, and architectural brainstorming as telemetry. Crucible treats it as a liability that must be contained.
