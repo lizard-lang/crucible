@@ -66,8 +66,9 @@ Crucible is entirely agnostic. You bring the API keys; Crucible manages the stat
 # Clone the repository
 git clone https://github.com/lizard-lang/crucible.git
 
-# Build the local encrypted binary
+# Build the local binary
 cd crucible
-liz build . 
+python crucible.py
+```
 
 Copyright (c) 2026 Adderalin & lizard-lang
