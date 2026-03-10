@@ -59,7 +59,7 @@ By concatenating `User -> Project -> Directory -> Chat`, Crucible physically pre
 
 Modern AI companies treat your chat history as training data and your API requests as telemetry. Crucible assumes the network is inherently hostile. 
 
-* **Argon2d Local Encryption:** Your SQLite database and context files are encrypted at rest using memory-hard, ASIC-resistant Argon2d hashing. 
+* **Argon2d Local Encryption:** Your context files are encrypted at rest using memory-hard, ASIC-resistant Argon2d hashing. 
 * **Secure Desktop Integration:** Crucible is launching as a Windows-first bare-metal application. Password prompts are routed through the Windows Secure Desktop environment (bypassing user-space keyloggers).
 * **DPAPI Fallback:** If you prefer frictionless access without manually typing a password, Crucible natively integrates with the Windows Data Protection API (DPAPI). Your encryption keys are mathematically bound to your secure Windows hardware login token.
 * **The Melt:** If your hardware is compromised, or you need to instantly purge a project, you simply delete the master key. The entire context database is cryptographically shattered. There is no cloud backup to subpoena.
