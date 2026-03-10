@@ -32,4 +32,4 @@ Crucible operates on absolute transparency. Before a single packet leaves your N
 
 ### 5. The Melt
 Security is not just about encryption; it is about destruction. Crucible is a container designed for extreme heat. 
-If your hardware is compromised, or you simply wish to erase a project's existence, you delete the local Argon2d master key. The SQLite database and all associated context cascades are cryptographically shattered. There is no cloud backup to subpoena. The container melts. 
+If your hardware is compromised, or you simply wish to erase a project's existence, you delete the local Argon2d master key. Your chats and all associated context cascades are cryptographically shattered. There is no cloud backup to subpoena. The container melts. 
